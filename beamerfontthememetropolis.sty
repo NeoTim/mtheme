@@ -12,15 +12,17 @@
 \RequirePackage[no-math]{fontspec}
 
 
+%%% modified by KK for ShareLaTeX use
 \defaultfontfeatures{Mapping=tex-text}
-\setsansfont[BoldFont={Fira Sans}]{Fira Sans Light}
-\setmonofont{Fira Mono}
-\newfontfamily\ExtraLight{Fira Sans ExtraLight}
-\newfontfamily\Light{Fira Sans Light}
-\newfontfamily\Book{Fira Sans}
-\newfontfamily\Medium{Fira Sans Medium}
+\setsansfont[Path=fonts/,BoldFont={FiraSans-Regular.ttf}]{FiraSans-Light.ttf}
+\setmonofont[Path=fonts/]{FiraMono-Regular.ttf}
+\newfontfamily\ExtraLight[Path=fonts/,ItalicFont=FiraSans-ExtraLightItalic.ttf]{FiraSans-ExtraLight.ttf}
+\newfontfamily\Light[Path=fonts/,ItalicFont=FiraSans-LightItalic.ttf]{FiraSans-Light.ttf}
+\newfontfamily\Book[Path=fonts/,ItalicFont=FiraSans-Italic.ttf,BoldFont=FiraSans-Bold.ttf,BoldItalicFont=FiraSans-BoldItalic.ttf]{FiraSans-Regular.ttf}
+\newfontfamily\Medium[Path=fonts/,ItalicFont=FiraSans-MediumItalic.ttf]{FiraSans-Medium.ttf}
 
-\AtBeginEnvironment{tabular}{\setsansfont[BoldFont={Fira Sans}, Numbers={Monospaced}]{Fira Sans Light}}
+\AtBeginEnvironment{tabular}{\setsansfont[Path=fonts/,BoldFont={FiraSans-Regular.ttf}, Numbers={Monospaced}]{FiraSans-Light.ttf}}
+%%%
 
 \setbeamerfont{title}{family=\Book, size=\Large}
 \setbeamerfont{author}{family=\ExtraLight, size=\small}

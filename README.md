@@ -7,6 +7,10 @@ Not convinced?  Have a look at the [demo slides](demo.pdf).
 
 ![Sample](http://i.imgur.com/wP4uGbS.png)
 
+### Quick setup
+
+`sudo apt-get install texlive-full -y`
+
 
 ### Installation
 
